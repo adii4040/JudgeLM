@@ -25,6 +25,6 @@ const finalResponseSchema = z.object({
     modelJudgments: z.array(modelJudgingSchema).describe("The judgments for each model"),
     finalJudgment: judgmentSchema.describe("The final judgment based on the model judgments"),
     response: responseSchema.describe("The final response based on the model judgments and the prompt"),
-})
+});
 
 export default finalResponseSchema;
