@@ -67,6 +67,8 @@ It then scores each response on:
 
 The final output is expected to match the Zod schema in `zodValidations.js`, which keeps the response structured and machine-readable.
 
+The judge prompt also includes basic guardrail instructions to treat the original user prompt as untrusted and to flag suspicious or instruction-overriding content. This improves robustness, but it is not a replacement for dedicated prompt-injection filtering or safety validation.
+
 ## Notes
 
 - The current `package.json` does not define a start script, so `node init.js` is the direct entry point.
