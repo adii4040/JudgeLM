@@ -10,6 +10,7 @@ const modelJudgingSchema = z.object({
         fluency: z.number().describe("The fluency of the model's response"),
         score: z.number().describe("The overall score of the model's response"),
     }).describe("The parameters for judging the model's response"),
+    response: z.string().describe("The model's response to the prompt"),
 });
 
 const judgmentSchema = z.object({
