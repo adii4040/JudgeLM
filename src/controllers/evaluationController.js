@@ -1,4 +1,3 @@
-import { success } from 'zod';
 import MODEL_NAMES from '../constants/models.constant.js';
 import getFinalJudgment from '../service/judgement.service.js';
 import {
@@ -11,6 +10,7 @@ import {
 export const evaluateModels = async (req, res) => {
     try {
         const { prompt } = req.body;
+        console.log('PROMPTT: ', prompt)
 
         if (!prompt) {
             return res.status(400).json({ error: "Prompt is required in request body." });
@@ -57,7 +57,7 @@ export const evaluateModels = async (req, res) => {
     } catch (error) {
         console.error("Error during prompt evaluation:", error);
         return res.status(500).json({
-            error: "Failed to evaluate prompt using Gemini models",
+            error: "Failed to evaluate prompt across models",
             message: error.message,
         });
     }
