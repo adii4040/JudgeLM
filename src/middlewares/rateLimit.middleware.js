@@ -1,6 +1,6 @@
 import redis from "../config/redis.js";
 
-const DAILY_LIMIT = 15;
+const DAILY_LIMIT = 5;
 const ONE_DAY = 60 * 60 * 24;
 
 export async function rateLimiter(req, res, next) {
