@@ -36,16 +36,16 @@ Here is a visual overview of the JudgeLM Gateway user interface during operation
 
 ### 1. Active Evaluation Pipeline
 Shows the evaluator console terminal logging parallel node processes in real time.
-![Active Pipeline](./Screenshot%20(1936).png)
+![Active Pipeline](https://github.com/user-attachments/assets/f9f441bc-4665-4022-9d0f-706459dc6968)
 
 ### 2. Multi-Model Completions and Evaluations
 Details performance metrics (Accuracy, Relevance, Fluency, Overall Score) along with isolated strengths, weaknesses, and reasoning for each active LLM node.
-![Multi-Model Evaluations 1](./Screenshot%20(1937).png)
-![Multi-Model Evaluations 2](./Screenshot%20(1938).png)
+![Multi-Model Evaluations 1](https://github.com/user-attachments/assets/ae041b86-5203-4228-8c66-aafdce895ecc)
+![Multi-Model Evaluations 2](https://github.com/user-attachments/assets/685ab1d6-2d47-4887-87cf-350bc7270a23)
 
 ### 3. Decision Matrix & Synthesized Optimal Response
 Visualizes the final ranking decision reasoning and shows the consolidated unified response.
-![Decision Matrix](./Screenshot%20(1939).png)
+![Decision Matrix](https://github.com/user-attachments/assets/c51992ed-390a-4961-8205-b61d967fc169)
 
 ---
 
