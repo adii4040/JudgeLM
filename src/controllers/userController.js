@@ -3,7 +3,8 @@ import User from '../models/user.model.js';
 const cookieOption = {
     httpOnly: true,
     secure: true,
-    sameSite: 'none'
+    sameSite: 'none',
+    partitioned: true,
 };
 
 const generateRefreshAndAccessToken = async (userId) => {
